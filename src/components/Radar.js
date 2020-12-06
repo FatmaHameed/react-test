@@ -1,12 +1,12 @@
-import React, { useState } from 'react';
-import { InputProvider } from './InputProvider';
-import { getBarChartUrl } from '.././util/getChartUrl';
+import React, { useState, useContext } from 'react';
+import { getRadarChartUrl } from '../util/getChartUrl';
 import MODULES from '../modules';
+import { InputProvider } from './InputProvider';
 
-export const Bar = () => {
+export const InputContext = () => {
   const [imageSrc, setImageSrc] = useState([]);
 
-  const image = getBarChartUrl([imageSrc]);
+  const image = getRadarChartUrl([imageSrc]);
   return (
     <div>
       {MODULES.map((module) => (

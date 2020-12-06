@@ -4,7 +4,8 @@
 `App` - Functions as the entry point for the whole application. Renders the app container component.
 `Nav` - for displaying the buttons and link them to the routes either '/bar' or '/radar'
 `Bar` - Functions: to display Bar chart into the route of /bar with the input fields
-`InputContext`This component was supposed to create global context to display input fields and work to update the data in the chart.
+`InputProvider`This component is created input and labels fields and export them.
+`Radar` - to display Radar chart into the route /radar
 
 
 2. Let's say your product owner asks you to define what you need to change to also validate that the user can only enter a number between 1 and 10. Write down (do NOT implement) in short steps what you would need to do.
