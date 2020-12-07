@@ -1,7 +1,7 @@
 import './App.css';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { Nav } from './components/Nav';
-import { InputContext } from './components/Radar';
+import { Radar } from './components/Radar';
 import { Bar } from './components/Bar';
 
 function App() {
@@ -10,7 +10,7 @@ function App() {
       <Router>
         <Switch>
           <Route path="/" exact component={Nav} />
-          <Route path="/radar" exact component={InputContext} />
+          <Route path="/radar" exact component={Radar} />
           <Route path="/bar" exact component={Bar} />
         </Switch>
       </Router>

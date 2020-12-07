@@ -10,9 +10,9 @@ export const Bar = () => {
   return (
     <div>
       {MODULES.map((module) => (
-        <InputProvider module={module} setImageSrc={setImageSrc} />
+        <InputProvider module={module} key={module} setImageSrc={setImageSrc} />
       ))}
-      <img src={image}></img>
+      <img src={image} alt="bar chart"></img>
     </div>
   );
 };
